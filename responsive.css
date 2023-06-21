@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+  a:link { 
+	color: #000;
+	text-decoration: none;
+	border:none;
+	}
+ a:visited { 
+	color: #000;
+	border:none;
+	}
+ a:hover {
+	color: #5BFCFA;
+	text-decoration: none;
+	border:none;
+	}
+ a:active {
+	color: #fff;
+	border:none;
+	}
+	
+.abouttext a:link { 
+	color: #000;
+	text-decoration: underline;
+	}
+.abouttext a:visited { 
+	color:#000;
+	text-decoration: underline;
+	}
+.abouttext a:hover {
+	color: #5BFCFA;
+	text-decoration: none;
+	}
+.abouttext a:active { 
+	color: #5BFCFA;
+	}
+	
+	.traveltext a:link { 
+	color: #000;
+	text-decoration: underline;
+	}
+.traveltext a:visited { 
+	color:#000;
+	text-decoration: underline;
+	}
+.traveltext a:hover {
+	color: #5BFCFA;
+	text-decoration: none;
+	}
+.traveltext a:active { 
+	color: #5BFCFA;
+	}
+	
+	
+	.instafooterhead a:link { 
+	color: #fff;
+	text-decoration: underline;
+	}
+.instafooterhead a:visited { 
+	color:#fff;
+	text-decoration: underline;
+	}
+.instafooterhead a:hover {
+	color: #5BFCFA;
+	text-decoration: none;
+	}
+.instafooterhead a:active { 
+	color: #5BFCFA;
+	}
+	
+	
+		.twitterfooterhead a:link { 
+	color: #fff;
+	text-decoration: underline;
+	}
+.twitterfooterhead a:visited { 
+	color:#fff;
+	text-decoration: underline;
+	}
+.twitterfooterhead a:hover {
+	color: #5BFCFA;
+	/* [disabled]text-decoration: none; */
+	}
+.twitterfooterhead a:active { 
+	color: #5BFCFA;
+	}
+	
+			.addressfooterhead a:link { 
+	color: #fff;
+	text-decoration: underline;
+	}
+.addressfooterhead a:visited { 
+	color:#fff;
+	text-decoration: underline;
+	}
+.addressfooterhead a:hover {
+	color: #5BFCFA;
+	text-decoration: none;
+	}
+.addressfooterhead a:active { 
+	color: #5BFCFA;
+	}
+
+img
+{  border-style: none;
+}
+
+
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color:#fff;
+	width:auto;
+	
+	
+}
+
+.divider {
+	height:10px;
+	width:100%;
+	background-color:#5BFCFA;
+	float:left;
+	}
+
+.wrapper {
+margin: 0 auto;
+}
+
+/* work */
+
+center {
+display: block;
+width:250px;
+}
+
+
+
+
+.work {
+	
+	width:100%;
+	max-width:1000px;
+	height:auto;
+	margin: 0 auto;
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+
+.workcont {
+	float: left;
+	background-color: #FFF;
+	border-bottom:1px solid #000;
+	padding-bottom:5px;
+	margin-bottom:80px
+}
+
+
+
+.workheaderssub {
+	font-family: 'webfontbold';
+	font-size: 12px;
+	margin-bottom: 4px;
+	border: none;
+	margin-top: 4px;
+	text-decoration: none;
+	text-align: center;
+	
+}
+
+.workpiclinks {
+	width:inherit;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border:none;
+	float: center;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+	
+	/* end footer */
