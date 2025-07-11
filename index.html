@@ -9,9 +9,7 @@
     <meta name="robots" content="noindex">
     <link rel="icon" type="image/png" href="favicon.png">
     
-
     <title>James Doy | Freelance User Experience Designer | Worldwide</title>
-
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
@@ -19,12 +17,42 @@
     <!-- Custom styles for this template -->
     <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
     <link href="bootstrap-3.3.5-dist/css/customstyles.css" rel="stylesheet">
-  	 
-	 <style>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+     <style>
     body {
    padding-top: 100px;
-	}
-	</style>
+    }
+    </style>
 <meta name="p:domain_verify" content="1efa16ed118748a631253fb549389e70"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -32,9 +60,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
   <body ID="top">
-	<!--#include file="nav.html" -->
+    <div w3-include-html="nav.html"></div> 
+<script>
+includeHTML();
+</script>
+    <!--#include file="nav.html" -->
     
 <div class="container">
     <div class="col-xs-12">
@@ -46,7 +77,7 @@
     <div class="workcont" style="padding-bottom: 23px; text-align: center;">
     <h3 style="color:#333333; line-height: 1.6;">Please note, most of my work is currently under NDA.<br>There's plenty I can go through over a video call though so please get in contact.</h3>
     <div style="padding-top: 40px;">    
-    <a href="cv/James-Doy-CV-Nov-2022.pdf" class="btn btn-primary btn-lg px-4">Download CV</a> <a href="#footer" class="btn btn-secondary btn-lg px-4">More about me</a>
+    <a href="cv/James-Doy-Product-Designer-CV.pdf" class="btn btn-primary btn-lg px-4">Download CV</a> <a href="#footer" class="btn btn-secondary btn-lg px-4">More about me</a>
       </div>
     </div>
     
@@ -107,7 +138,6 @@
          <a class="text-center" style="text-decoration: underline; color: #347DC9;" href="Wickes.html"><strong>View Case Studies</strong></a>
             </div>
        </div>
-
         <div class="col-md-4 workheaderssub ">
             <div class="workcont" style="padding-bottom: 23px;"id="tails">
                 <a href="tails.html"><img src="tails/tailsalt.png" class="onecolumnwork"/></a>
@@ -116,7 +146,6 @@
         <a class="text-center" style="text-decoration: underline; color: #347DC9;" href="tails.html"><strong>View Case Studies</strong></a>
           </div>
        </div>
-
           <div class="col-md-4 workheaderssub ">
             <div class="workcont" style="padding-bottom: 23px;" id="Mitsubishi">
   <a href="mitsubishi.html"><img src="mitsubishi/mitsubishi-2.png" class="onecolumnwork"/></a>
@@ -126,7 +155,6 @@
           </div>
        </div>
 </div> 
-
 <h2 style="padding-bottom: 23px; text-align: center; margin-top: 150px;">Other Work</h2>
 <!--<div class="col-md-3 workheaderssub ">
             <div class="workcont" id="HSBC">
@@ -136,9 +164,6 @@
           </div>
        </div>-->
       
-
-
-
       <!-- <div class="col-md-3 workheaderssub ">
             <div class="workcont" id="Office Depot">
   <a target="_blank" href="https://www.vikingdirekt.at/en/"><img src="Officedepot/ODalt.png" class="onecolumnwork"/></a>
@@ -146,9 +171,7 @@
         <p style="color:#CB0000; font-size:10px;">UX Design | Content coming soon</p> 
           </div>
        </div>-->
-
        
-
       <div class="col-md-3 workheaderssub">
             <div class="workcont" id="TWR">
   <a href="thatwasrad.html"><img src="responsivehomepageimg/TWRcolour.png" class="onecolumnwork"/></a>
@@ -156,7 +179,6 @@
 <p style="color:#eb008b; font-size:10px;">UX/UI | E-commerce | Development</p> 
           </div>
        </div>
-
        <div class="col-md-3 workheaderssub">
             <div class="workcont" id="Argos">
   <a href="argos.html"><img src="responsivehomepageimg/ARGOScolour.jpg" class="onecolumnwork"/></a>
@@ -164,87 +186,83 @@
 <p style="color:#f03226; font-size:10px;">Digital | CRM | UI Design</p> 
           </div>
        </div>
-
         <div class="col-md-3 workheaderssub ">
-        		<div class="workcont" id="jdbrand">
+                <div class="workcont" id="jdbrand">
   <a href="JDbrand.html"><img src="responsivehomepageimg/JDcolour.jpg" class="onecolumnwork"/></a>
-  		 <a href="JDbrand.html">Jo Downs Brand Refresh</a><br>
+         <a href="JDbrand.html">Jo Downs Brand Refresh</a><br>
         <p style="color:#b62218; font-size:10px;">Identity | Print | POS</p> 
-    			</div>
-  		 </div>
+                </div>
+         </div>
    
     
-
          
          <div class="col-md-3 workheaderssub">
-        		<div class="workcont" id="Inside">
+                <div class="workcont" id="Inside">
   <a href="inside.html"><img src="responsivehomepageimg/INSIDEcolour.jpg" class="onecolumnwork"/></a>
 <a href="inside.html">Inside Industry</a>
 <p style="color:#ea8c1a; font-size:10px;">Editorial | Print | Publishing</p> 
-    			</div>
-  		 </div>
+                </div>
+         </div>
   
         
          <div class="col-md-3 workheaderssub">
-        		<div class="workcont" id="jdweb">
+                <div class="workcont" id="jdweb">
   <a href="jdweb.html"><img src="responsivehomepageimg/JDWEBcolour.jpg" class="onecolumnwork"/></a>
 <a href="jdweb.html">Jo Downs Website</a>
 <p style="color:#9bbed2; font-size:10px;">Digital | Development</p> 
-    			</div>
-  		 </div>
+                </div>
+         </div>
      
      
     
          
          <div class="col-md-3 workheaderssub">
-        		<div class="workcont" id="SGD">
+                <div class="workcont" id="SGD">
  <a href="sgd.html"><img src="responsivehomepageimg/SGDcolour.jpg" class="onecolumnwork"/></a>
 <a href="sgd.html">Society Garden Designers</a>
 <p style="color:#a3d164; font-size:10px;">Editorial | Print | Publishing</p> 
-    			</div>
-  		 </div>
+                </div>
+         </div>
           
          
      
          <div class="col-md-3 workheaderssub">
-        		<div class="workcont" id="JDold">
+                <div class="workcont" id="JDold">
   <a href="jdold.html"><img src="responsivehomepageimg/JDOLDcolour.jpg" class="onecolumnwork"/></a>
 <a href="jdold.html">Jo Downs Older Work</a>
 <p style="color:#6ba6b6; font-size:10px;">Identity | Print | POS</p> 
-    			</div>
-  		 </div>
+                </div>
+         </div>
        
      
        
          <div class="col-md-3 workheaderssub">
-        		<div class="workcont" id="MT">
+                <div class="workcont" id="MT">
   <a href="mt.html"><img src="responsivehomepageimg/MTcolour.jpg" class="onecolumnwork"/></a>
 <a href="mt.html">Media Trust</a>
 <p style="color:#cfd93c; font-size:10px;">Editorial | Print | Publishing</p> 
-    			</div>
-  		 </div>
+                </div>
+         </div>
      
         <div class="col-md-3 workheaderssub">
-        		<div class="workcont" id="siemens">
+                <div class="workcont" id="siemens">
   <a href="siemens.html"><img src="responsivehomepageimg/SIEMENScolour.jpg" class="onecolumnwork"/></a>
 <a href="siemens.html">Siemens</a>
 <p style="color:#00a8ac; font-size:10px;">Print</p> 
-    			</div>
-  		 </div>
+                </div>
+         </div>
          
          
          <div class="col-md-3 workheaderssub">
-        		<div class="workcont" id="logos">
+                <div class="workcont" id="logos">
   <a href="logos.html"><img src="responsivehomepageimg/CPWMcolour.jpg" class="onecolumnwork"/></a>
 <a href="logos.html">Logos</a>
 <p style="color:#3eab34; font-size:10px;">Identity</p> 
-    			</div>
-  		 </div>
+                </div>
+         </div>
          
      
 </div>       <!-- Container Close --> 
-
-
 <!-- Image preloader -->
 <div style="display:none;">
 <img src="/responsivehomepageimg/JDcolour.jpg" width="1" height="1" border="0" alt="Image 01">
@@ -264,8 +282,42 @@
 </div>
 <!-- end Image preloader -->
  <!--#include file="footer.html" -->
+<div w3-include-html="footer.html"></div> 
 
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="//lightwidget.com/widgets/lightwidget.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
 </html>
