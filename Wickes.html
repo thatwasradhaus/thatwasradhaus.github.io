@@ -64,7 +64,11 @@ function includeHTML() {
   </head>
 
   <body ID="top">
-	<!--#include file="nav.html" -->
+<div w3-include-html="nav.html"></div> 
+<script>
+includeHTML();
+</script>
+    <!--#include file="nav.html" -->
     
 <div class="container">
     <div class="row">
@@ -109,6 +113,7 @@ function includeHTML() {
 </div>
 <!-- end Image preloader -->
  <!--#include file="footer.html" -->
+<div w3-include-html="footer.html"></div> 
 
 
   </body>
