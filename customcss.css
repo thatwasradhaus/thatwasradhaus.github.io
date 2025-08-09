@@ -36,6 +36,13 @@ h4 {
   font-size: 18px;
 }
 
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4E5151;
+  font-size: 16px;
+}
+
+
 p {
   font-family: Arial, Helvetica, sans-serif;
   color: #4E5151;
@@ -258,6 +265,17 @@ li {
     min-height: 1rem;
     margin-bottom: 60px;
     padding-right: 24px;
+    overflow: hidden;
+    text-align: left;
+    color: #333;
+}
+
+  .box2, .box-first2, .box-large2, .box-nested2, .box-row2 {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 1rem;
+    margin-bottom: 60px;
+    padding-right: 0px;
     overflow: hidden;
     text-align: left;
     color: #333;
