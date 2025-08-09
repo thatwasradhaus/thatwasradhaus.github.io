@@ -157,6 +157,7 @@ li {
     right: 0;
     left: 0;
     z-index: 1030;
+    border-bottom: #5BFCFA solid 5px;
   }
 
 /*.topnav a:hover {
@@ -213,41 +214,6 @@ li {
 /* End Intro */
 
 /* Clients */
-
-.marquee {
-            box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
-            border: 1px solid rgba(0, 0, 0, .15);
-            background-color: #ffffff;
-            overflow: hidden;
-            position: relative;
-            height: 200px;
-            width: 100%;
-            /* Full width of its parent */
-            white-space: nowrap;
-        }
-
-        .marquee p {
-            position: absolute;
-            width: auto;
-            height: 100%;
-            margin: 0;
-            line-height: 50px;
-            text-align: center;
-            /* Start off the right edge */
-            transform: translateX(10%);
-            /* Animate to the left */
-            animation: scroll-left 20s linear infinite;
-        }
-
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
-        }
 
   .clientlogo {
   padding: 30px;
@@ -392,6 +358,8 @@ video::-webkit-media-controls {
   background-color: #4E5151;
   padding-top: 32px;
   padding-bottom: 32px;
+  border-top: #5BFCFA solid 5px;
+
 }
 
   .footer-left{
