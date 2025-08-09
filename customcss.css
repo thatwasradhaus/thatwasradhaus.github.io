@@ -1,0 +1,390 @@
+
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'TG - Girthy Ultra';
+  src: url('file:///Users/jamesdoy/Desktop/Portfolio-2025/fonts/TG-GirthyUltra.otf') format('otf');
+}
+
+h1 {
+	font-family: 'TG - Girthy Ultra';
+  color: #4E5151;
+}
+
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4E5151;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4E5151;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4E5151;
+  font-size: 18px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4E5151;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+li {
+  margin-left:5%; 
+  margin-right:5%; 
+  list-style-position: outside;
+  line-height: 24px;
+}
+
+
+
+.container-hero {
+  margin: auto;
+  max-width:1280px;
+  padding: 16px;
+  margin-top: 52px;
+  margin-bottom: 16px;
+}
+
+
+
+.container-image {
+  margin: auto;
+  max-width:1280px;
+  padding: 16px;
+  margin-top: 48px;
+  margin-bottom: 36px;
+}
+
+
+.intro-paragraph {
+  margin: auto;
+  max-width:936px;
+  padding: 0px;
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+
+
+ .intro-paragraph-text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.intro-paragraph-link {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+.container-paragraph {
+  margin: auto;
+  max-width:936px;
+  padding: 0px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+
+
+
+
+
+/* Navigation */
+
+.topnav {
+  overflow: hidden;
+  background-color: #4E5151;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+}
+
+.topnav a.logo {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navcontainer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+/*.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}*/
+
+.logo{
+	width: 100px;
+}
+
+.slash {
+	float: right;
+	color:#5BFCFA;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+/* End Navigation */
+
+/* Intro */
+
+.container-intro {
+  margin: auto;
+  max-width:936px;
+  padding: 16px;
+  margin-top: 126px;
+  margin-bottom: 48px;
+}
+
+
+.fullwidthcontainer {
+  overflow: hidden;
+  background-color: #4E5151;
+}
+
+.avatarimage{
+  width:80%;
+    border-radius: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 50px;
+    margin-top: 16px;
+  }
+
+
+/* End Intro */
+
+/* Clients */
+
+.marquee {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+            border: 1px solid rgba(0, 0, 0, .15);
+            background-color: #ffffff;
+            overflow: hidden;
+            position: relative;
+            height: 200px;
+            width: 100%;
+            /* Full width of its parent */
+            white-space: nowrap;
+        }
+
+        .marquee p {
+            position: absolute;
+            width: auto;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            /* Start off the right edge */
+            transform: translateX(10%);
+            /* Animate to the left */
+            animation: scroll-left 20s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+  .clientlogo {
+  padding: 30px;
+  width: 150px;
+  }
+
+
+
+/* End Clients */
+
+/* Columns */
+  .box, .box-first, .box-large, .box-nested, .box-row {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 1rem;
+    margin-bottom: 60px;
+    padding-right: 24px;
+    overflow: hidden;
+    text-align: left;
+    color: #333;
+}
+/* End Columns */
+
+/* Buttons */
+
+.btn {
+  border-width: 2px; border-color: #5BFCFA; 
+  border-radius: 12px;
+  color: #4A4A4A; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.primary {background-color: #4E5151; border-color: #4E5151;} /* Green */
+.primary:hover { color: #ffffff; background-color: #4E5151;}
+
+.secondary {background-color: #ffffff; border-color: #4E5151;} /* Green */
+.secondary:hover { color: #ffffff; background-color: #4E5151;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */
+.default:hover {background: #ddd;}
+
+/* End Buttons */
+
+/* Homepage */
+
+.container-section {
+  margin: auto;
+  max-width:936px;
+  padding: 0px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.container-section-wide {
+  margin: auto;
+  max-width:1280px;
+  padding: 16px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+
+
+.Casestudycard {
+  margin-bottom: 64px;
+}
+
+.Casestudyimage {
+  max-width: 100%;
+  height: auto;
+}
+
+.Casestudy {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* End Homepage */
+
+/* Case Study */
+
+
+.heroimage {
+  max-width: 100%;
+  height: auto;
+  margin-top:64px;
+}
+
+.vlp-hero__heroWrapper___1TIpH {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.vlp-hero__heroWrapper___1TIpH:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+    transform: rotate(180deg);
+    background-image: linear-gradient(-180deg,rgba(0,0,0,.1) 70%,#000 93%);
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+/*End Case Study */
+
+/* Footer */
+
+  
+.footercontainer {
+  overflow: hidden;
+  background-color: #4E5151;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+  .footer-left{
+  border-right: 1px solid #ffffff;
+  margin-right: 14px;
+  padding: 10px;
+}
+
+  .footer-right{
+  margin-left: 14px;
+  padding: 10px;
+}
+
+/* End Footer */
