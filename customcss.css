@@ -404,6 +404,14 @@ li {
   margin-bottom: 64px;
 }
 
+.container-section-marquee {
+  margin: auto;
+  max-width:1280px;
+  padding: 16px;
+  margin-top: 64px;
+  margin-bottom: 0px;
+}
+
 
 
 .Casestudycard {
